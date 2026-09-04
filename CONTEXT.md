@@ -1,0 +1,31 @@
+# nlohmann/json context
+> refreshed 2026-09-04 | upstream default: develop @ 19386dd14af178fecd4a4a65549b07e240e092a9
+
+## Identity & policies
+- upstream: nlohmann/json, default branch `develop`, primary language C++, English-first (yes)
+- CLA/DCO: DCO required (CONTRIBUTING.md: "All contributions (including pull requests) must agree to the Developer Certificate of Origin (DCO) version 1.1"). No CLA bot.
+- AI-assisted PR policy: unstated (no ban found in CONTRIBUTING)
+- signed commits required: no
+- PR template: `.github/PULL_REQUEST_TEMPLATE.md` (checklist: describe changes, reference issue, 100% coverage, docs updated, amalgamated via `make amalgamate`)
+- external tracker: github
+
+## Conventions (verified from merged PRs)
+- branch naming: `fix/<kebab-description>` dominant for human fixes; `claude/...` also seen; dependabot uses `dependabot/...`
+- commit style: plain imperative / descriptive; PRs merged against `develop`
+- test command: `cmake -S. -B build && cmake --build build -j 10 && ctest --test-dir build -j 10`
+- docs build: `make install_venv -C docs/mkdocs && make serve -C docs/mkdocs`
+- amalgamate: `make amalgamate` (regenerates single_include from include/nlohmann)
+- CONTRIBUTING explicitly exempts typo fixes from the issue-first discussion requirement: "Only a few cases (e.g., fixing typos) do not require prior discussions."
+
+## Maintainer picture
+- primary maintainer: Niels Lohmann (nlohmann). Active, responsive.
+- external contributors merge regularly (darkdi, Angadi56, petrbel seen in vetted research).
+
+## Issue-area health
+- typo/doc/link fixes are welcome and exempt from issue-first.
+
+## Gap ledger (dedupe — READ FIRST, never re-pick)
+- (none yet for this repo)
+
+## Mined gaps (discovered, not yet attempted)
+- (this run: trivial-fix pass — hunt typos, dead links, stale command references, wrong doc lines across the whole repo)
