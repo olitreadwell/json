@@ -25,7 +25,8 @@
 - typo/doc/link fixes are welcome and exempt from issue-first.
 
 ## Gap ledger (dedupe — READ FIRST, never re-pick)
-- (none yet for this repo)
+- `2026-09-04` self-found gap (dead links in docs) — outcome: pr-opened — lesson: FAQ `dump()` link (old nlohmann.github.io Doxygen page) and CocoaPods "file issues here" link (Bitbucket issues page) both 404; replaced with relative `../api/basic_json/dump.md` (repo convention) and `https://cocoapods.org/pods/nlohmann_json` (200). Fork PR #2, base=develop, head=fix/broken-links-in-docs. Docs-only, no amalgamate needed.
 
 ## Mined gaps (discovered, not yet attempted)
-- (this run: trivial-fix pass — hunt typos, dead links, stale command references, wrong doc lines across the whole repo)
+- `2026-09-04` docs dead links (FAQ dump() + CocoaPods issues) — status: attempted (pr-opened, fork PR #2)
+- `2026-09-04` trivial-fix pass (typos: `supress`->`suppress` in macro_scope.hpp, `advices`->`advice` in Makefile; dead links in customers.md) — status: proposed (not attempted; macro_scope.hpp needs amalgamate, customers.md links are third-party/transient)
