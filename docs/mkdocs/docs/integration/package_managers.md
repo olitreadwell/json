@@ -928,7 +928,7 @@ If you are using [Buckaroo](https://buckaroo.pm), you can install this library's
 
 If you are using [CocoaPods](https://cocoapods.org), you can use the library by adding pod `"nlohmann_json", '~>3.1.2'`
 to your podfile (see [an example](https://bitbucket.org/benman/nlohmann_json-cocoapod/src/master/)). Please file issues
-[here](https://bitbucket.org/benman/nlohmann_json-cocoapod/issues?status=new&status=open).
+[here](https://cocoapods.org/pods/nlohmann_json).
 
 ## npm
 
